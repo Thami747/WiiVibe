@@ -1,10 +1,10 @@
 import React, {Component, PropTypes} from "react";
 import {Router} from "react-native-router-flux";
-import {Provider} from "react-redux";
 import scenes from "../routes/scenes";
+import {Provider} from "react-redux";
 
 export default class AppContainer extends Component {
-    static prototypes = {
+    static propTypes = {
         store: PropTypes.object.isRequired
     };
 

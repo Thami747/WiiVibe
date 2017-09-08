@@ -3,11 +3,11 @@ import {View, Text} from "react-native";
 
 class Home extends React.Component {
     componentDidMount() {
-        this.props.setName()
+        this.props.setName();
     }
      render(){
          return(
-          <View style={{flex:1, justifyContent:"center", alignment:"center"}}>
+          <View style={{flex:1, justifyContent:"center", alignItems:"center"}}>
                 <Text>This is how {this.props.name} does it...</Text>
           </View>
          );

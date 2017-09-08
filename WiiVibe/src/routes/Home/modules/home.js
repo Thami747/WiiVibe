@@ -1,5 +1,5 @@
 import update from "react-addons-update";
-import constants from "./actionConstants";
+import constants from "./ActionConstants";
 
 const {SET_NAME} = constants;
 
@@ -28,6 +28,6 @@ const initialState = {};
 export function HomeReducer(state = initialState, action) {
     const handler = ACTION_HANDLERS[action.type];
 
-    return handler ? handler(state, action) : initialState;
+    return handler ? handler(state, action) : state;
     
 }
